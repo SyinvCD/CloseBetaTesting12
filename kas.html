@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kas - Dalam Pengembangan</title>
+    <!-- Memuat Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Memuat Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- CSS Kustom untuk Transisi Header -->
+    <style>
+        /* Menambahkan transisi halus untuk header */
+        #page-header {
+            transition: transform 0.3s ease-in-out;
+        }
+        /* Kelas untuk menyembunyikan header dengan menggesernya ke atas */
+        .header-hidden {
+            transform: translateY(-100%);
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Kontainer utama untuk tampilan mobile -->
+    <div class="max-w-sm mx-auto bg-white min-h-screen shadow-lg flex flex-col">
+
+        <!-- HEADER DIPERBARUI: Padding diubah dari p-6 menjadi px-6 py-4 agar sesuai dengan gambar -->
+        <header id="page-header" class="sticky top-0 z-20 px-6 py-4 rounded-b-3xl text-white relative bg-cover bg-center shadow-lg">
+            <div class="absolute inset-0 bg-black/50 rounded-b-3xl"></div>
+            <div class="relative z-10">
+                <!-- Tombol Menu -->
+                <div class="flex justify-end mb-2">
+                    <button id="menu-toggle" class="p-2 bg-gray-500/50 rounded-lg hover:bg-gray-500/70 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
+                    </button>
+                </div>
+
+                <!-- Menu Navigasi (Dropdown) -->
+                <nav id="mobile-menu" class="hidden absolute top-full right-0 mt-2 w-48 bg-white/95 backdrop-blur-sm rounded-xl shadow-lg ring-1 ring-black ring-opacity-5">
+                    <div class="py-2">
+                        <a href="sblog.html" class="block px-4 py-2 text-sm text-gray-800 font-semibold hover:bg-purple-100">BLOG</a>
+                        <a href="index.html" class="block px-4 py-2 text-sm text-gray-800 font-semibold hover:bg-purple-100">FILE</a>
+                        <a href="kas.html" class="block px-4 py-2 text-sm text-purple-700 bg-purple-100 font-bold">KAS</a>
+                    </div>
+                </nav>
+
+                <!-- KONTEN HEADER DIPERBARUI: Wrapper padding dihapus untuk mengurangi tinggi header -->
+                <div>
+                    <h1 class="text-3xl font-bold text-center">Halaman Kas</h1>
+                    <p class="mt-1 text-white/90 text-center">Sabar, masih bulan depan atau tidak 2 minggu lagi.</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- KONTEN UTAMA DIPERBARUI: Ditambahkan konten agar bisa di-scroll -->
+        <main class="p-6 flex-grow">
+            <div class="text-center mb-12">
+                <svg class="mx-auto h-16 w-16 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path vector-effect="non-scaling-stroke" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <h3 class="mt-4 text-lg font-medium text-gray-900">Segera Hadir</h3>
+                <p class="mt-2 text-base text-gray-500">Kami sedang bekerja keras untuk fitur ini. 🗿</p>
+            </div>
+            
+            <!-- Konten dummy untuk scrolling -->
+            <div class="space-y-4 text-gray-600">
+                <p>Fitur kas ini akan memungkinkan Anda untuk melacak pemasukan dan pengeluaran dengan mudah. Anda akan dapat melihat laporan keuangan, membuat kategori, dan mengelola anggaran Anda langsung dari sini.</p>
+                <div class="h-48 bg-gray-200 rounded-lg flex items-center justify-center"><span class="text-gray-400">Grafik Laporan [Contoh]</span></div>
+                <p>Kami merancangnya agar intuitif dan mudah digunakan, bahkan bagi Anda yang belum pernah menggunakan aplikasi keuangan sebelumnya. Tampilannya akan bersih dan modern, fokus pada informasi yang paling penting.</p>
+                <p>Selain itu, fitur ini akan terintegrasi dengan layanan lain yang sudah ada, memberikan pengalaman yang lebih mulus. Data Anda akan aman dan tersinkronisasi di semua perangkat.</p>
+                <div class="h-32 bg-gray-200 rounded-lg flex items-center justify-center"><span class="text-gray-400">Daftar Transaksi [Contoh]</span></div>
+                <p>Terima kasih atas kesabaran Anda. Kami yakin penantian ini akan sepadan!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </main>
+    </div>
+
+    <!-- Menghubungkan ke file JavaScript -->
+    <script src="assets/js/kas.js"></script>
+</body>
+</html>
