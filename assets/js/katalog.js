@@ -43,6 +43,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const allProducts = [
         { id: 'template-autocad', name: 'Dynamic Autocad', category: 'Software', imageUrl: 'https://placehold.co/400x300/16a34a/ffffff?text=Dinamic+blockz', downloadUrl: 'https://drive.google.com/drive/folders/1FE0lsZ1KkGZOeFnYfiHq6JohJMlj8McC?usp=drive_link' },
         { id: 'template-canva', name: 'Software DPIB', category: 'Template', imageUrl: 'https://placehold.co/400x300/7c3aed/ffffff?text=Software+DPIB', downloadUrl: 'https://drive.google.com/drive/folders/1EzyW0m76I6Kfha9wlrRgU1Ix3ZTuFzwv?usp=drive_link' },
+        { id: 'template-canva', name: 'Software DPIB', category: 'Template', imageUrl: 'https://placehold.co/400x300/7c3aed/ffffff?text=Software+DPIB', downloadUrl: 'https://drive.google.com/drive/folders/1EzyW0m76I6Kfha9wlrRgU1Ix3ZTuFzwv?usp=drive_link' }, 
+        { id: 'template-canva', name: 'Software DPIB', category: 'Template', imageUrl: 'https://placehold.co/400x300/7c3aed/ffffff?text=Software+DPIB', downloadUrl: 'https://drive.google.com/drive/folders/1EzyW0m76I6Kfha9wlrRgU1Ix3ZTuFzwv?usp=drive_link' },
+        { id: 'template-canva', name: 'Software DPIB', category: 'Template', imageUrl: 'https://placehold.co/400x300/7c3aed/ffffff?text=Software+DPIB', downloadUrl: 'https://drive.google.com/drive/folders/1EzyW0m76I6Kfha9wlrRgU1Ix3ZTuFzwv?usp=drive_link' }, 
+        { id: 'template-canva', name: 'Software DPIB', category: 'Template', imageUrl: 'https://placehold.co/400x300/7c3aed/ffffff?text=Software+DPIB', downloadUrl: 'https://drive.google.com/drive/folders/1EzyW0m76I6Kfha9wlrRgU1Ix3ZTuFzwv?usp=drive_link' },
     ];
 
     // --- FUNGSI SPESIFIK HALAMAN KATALOG ---
@@ -128,3 +132,4 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     renderAllProducts(allProducts);
 });
+
